@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="icon" href="./favicon.svg"> -->
+    <!-- GOOGLE FONT  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap" rel="stylesheet">
+    <!-- AOS JS  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- CSS LINK  -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Grilli - Amazing & Delicious</title>
+</head>
+<body>
+
+    <!-- loading page  -->
+    <div class="loading">
+        <div class="loading-icon"></div>
+        <div class="loading-title" data-text="Grilli">Grilli</div>
+    </div>
+
+    <!-- scroll-top -->
+    <div class="scroll-top">
+        <ion-icon name="chevron-up-outline"></ion-icon>
+    </div>
+
+    <div class="overlay"></div>
+    <header id="home">
+        <div class="header-images">
+            <div class="slide" style="background-image: url('./assets/images/hero-slider-1.jpg');"></div>
+            <div class="slide" style="background-image: url('./assets/images/hero-slider-2.jpg');"></div>
+            <div class="slide" style="background-image: url('./assets/images/hero-slider-3.jpg');"></div>
+        </div>
+        <div class="container">
+            <!-- info-res  -->
+            <div class="info-res">
+                <div class="left-info">
+                    <div class="info-content">
+                        <ion-icon class="info-icon" name="location-outline"></ion-icon>
+                        <p>Restaurant St, Delicious City, London 9578, UK</span>
+                    </div>
+                    <div class="info-content">
+                        <ion-icon class="info-icon" name="alarm-outline"></ion-icon>
+                        <p>Daily : 8.00 am to 10.00 pm</p>
+                    </div>
+                </div>
+                <div class="right-info">
+                    <div class="info-content">
+                        <ion-icon class="info-icon" name="call-outline"></ion-icon>
+                        <a>+1 123 456 7890</a>
+                    </div>
+                    <div class="info-content">
+                        <ion-icon class="info-icon" name="mail-outline"></ion-icon>
+                        <a>booking@restaurant.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <div class="logo">
+                <img src="./assets/images/logo.svg" alt="">
+            </div>
+            <ul>
+                <li>
+                    <a class="active" href="#home">Home</a>
+                </li>
+                <li>
+                    <a href="#menus">Menus</a>
+                </li>
+                <li>
+                    <a href="#about">About us</a>
+                </li>
+                <li>
+                    <a href="#ourChefs">Our Chefs</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+            <div class="right-nav">
+                <button class="btn-animation find-table">Find A Table</button>
+                <div class="hamburger">
+                    <div class="hamb-icon"></div>
+                    <div class="hamb-icon"></div>
+                    <div class="hamb-icon"></div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="content-header">
+            <div class="title-section">
+                <h2 data-aos="fade-up">TRADATIONAL & HYGINE</h2>
+                <img data-aos="fade-up" src="./assets/images/separator.svg" class="separator" alt="">
+            </div>
+            <h1 data-aos="fade-up" class="title">For the love of delicious food</h1>
+            <p data-aos="fade-up">Come with family & feel the joy of mouthwatering food</p>
+            <button data-aos="fade-up" class="btn-animation">View Our Menu</button>
+        </div>
+        <div class="book-table">
+            <img src="./assets/images/hero-icon.png" alt="">
+            <h2>book a table</h2>
+            <div class="overlay-book-table"></div>
+        </div>
+        <div class="arrow-left">
+            <ion-icon name="chevron-back-outline" class="left-icon"></ion-icon>
+        </div>
+        <div class="arrow-right">
+            <ion-icon name="chevron-back-outline" class="right-icon"></ion-icon>
+        </div>
+    </header>
+
+    <!-- Nav List Mobile -->
+    <div class="nav-mobile">
+        <div class="close-icon">
+            <ion-icon name="close-outline" onclick="closeNavList()"></ion-icon>
+        </div>
+        <div class="logo">
+            <img src="./assets/images/logo.svg" alt="">
+        </div>
+        <ul>
+            <li class="active">
+                <div class="rectangle-list"></div>
+                <a href="#home">Home</a>
+            </li>
+            <li>
+                <div class="rectangle-list"></div>
+                <a href="#menus">Menus</a>
+            </li>
+            <li>
+                <div class="rectangle-list"></div>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <div class="rectangle-list"></div>
+                <a href="#ourChefs">Our Chefs</a>
+            </li>
+            <li>
+                <div class="rectangle-list"></div>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+        <div class="info-nav-list">
+            <h2>Visit Us</h2>
+            <p>Restaurant St, Delicious City,</p>
+            <p>London 9578, UK</p>
+            <p>Open: 9.30 am - 2.30pm</p>
+            <a href="#">booking@grilli.com</a>
+            <div class="rectangle-list"></div>
+            <h3>Booking Request</h3>
+            <div class="phone">+88-123-123456</div>
+        </div>
+    </div>
+
+    <!-- Menu Section  -->
+    <section class="menu">
+        <img src="./assets/images/shape-2.png" class="shape1" alt="">
+        <img src="./assets/images/shape-1.png" class="shape2" alt="">
+        <div class="title-section">
+            <h2>FLAVORS FOR ROYALTY</h2>
+            <img src="./assets/images/separator.svg" alt="">
+        </div>
+        <h1 data-aos="fade-up" class="title">We Offer Top Notch</h1>
+        <p data-aos="fade-up">Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem Ipsum has been the industrys standard dummy text ever.</p>
+        <div class="menus-card">
+            <div data-aos="flip-left" class="menu-card">
+                <div class="menu-imgs">
+                    <img src="./assets//images/img-pattern.svg" class="pattern-img" alt="">
+                    <img src="./assets/images/service-1.jpg" class="service-img" alt="">
+                </div>
+                <h2>
+                    <a href="#">Breakfast</a>
+                </h2>
+                <a href="#" class="view-btn link">View Menu</a>
+            </div>
+            <div data-aos="flip-left" class="menu-card">
+                <div class="menu-imgs">
+                    <img src="./assets//images/img-pattern.svg" class="pattern-img" alt="">
+                    <img src="./assets/images/service-2.jpg" class="service-img" alt="">
+                </div>
+                <h2>
+                    <a href="#">Appetizers</a>
+                </h2>
+                <a href="#" class="view-btn">View Menu</a>
+            </div>
+            <div data-aos="flip-left" class="menu-card">
+                <div class="menu-imgs">
+                    <img src="./assets//images/img-pattern.svg" class="pattern-img" alt="">
+                    <img src="./assets/images/service-3.jpg" class="service-img" alt="">
+                </div>
+                <h2>
+                    <a href="#">
+                        Drinks</a>
+                </h2>
+                <a href="#" class="view-btn">View Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section  -->
+    <section class="about" id="about">
+        <img src="./assets/images/shape-3.png" class="shape3" alt="">
+        <div class="content-about">
+            <div class="left" data-aos="fade-right">
+                <div class="title-section">
+                    <h2>Our story</h2>
+                    <img src="./assets/images/separator.svg" alt="">
+                </div>
+                <h1 class="title">Every Fla vor Tells a Story</h1>
+                <p>Lorem Ipsum is simply dummy text of the printingand typesetting industry lorem Ipsum has been the industrys standard dummy text ever since the when an unknown printer took a galley of type and scrambled it to make a type specimen book It has survived not only five centuries, but also the leap into.</p>
+                <h3>Book Through Call</h3>
+                <a href="#" class="link">+80 (400) 123 4567</a>
+                <button class="btn-animation">Read More</button>
+            </div>
+            <div class="right" data-aos="fade-left">
+                <div class="badge-img">
+                    <img src="./assets/images/badge-2.png" class="badge-2" alt="">
+                    <img src="./assets/images/badge-2-bg.png" class="badge-2-bg" alt="">
+                </div>
+                <div class="about-banner">
+                    <img src="./assets/images/about-banner.jpg" alt="">
+                </div>
+                <div class="about-abs-banner">
+                    <img width="120px" class="pattern" src="./assets/images/img-pattern.svg" alt="">
+                    <img class="about-abs" src="./assets/images/about-abs-image.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- our chef section  -->
+    <section class="our-chef" id="ourChefs">
+        <img data-aos="fade-left" src="./assets/images/shape-9.png" class="shape9" alt="">
+        <div class="left">
+            <img src="./assets/images/special-dish-banner.jpg" alt="">
+        </div>
+        <div class="right" data-aos="fade-left">
+            <img src="./assets/images/badge-1.png" class="badge-img" alt="">
+            <div class="title-section">
+                <h2>SPECIAL DISH</h2>
+                <img src="./assets/images/separator.svg" alt="">
+            </div>
+            <div class="title">Lobster Tortellini</div>
+            <p>Lorem Ipsum is simply dummy text of the printingand typesetting industry lorem Ipsum has been the industrys standard dummy text ever since the when an unknown printer took a galley of type.</p>
+            <div class="price">
+                <span>$40.00</span>
+                <span>$20.00</span>
+            </div>
+            <button class="btn-animation">View All Menu</button>
+        </div>
+    </section>
+
+    <!-- Menus List section  -->
+    <section class="menus-list" id="menus">
+        <img src="./assets/images/shape-5.png" class="shape5" alt="">
+        <img src="./assets/images/shape-6.png" class="shape6" alt="">
+        <div class="title-section">
+            <h2>SPECIAL SELECTION</h2>
+            <img src="./assets/images/separator.svg" alt="">
+        </div>
+        <h1 class="title">Delicious Menu</h1>
+        <div class="container-menu">
+            <div class="content-menu">
+                <div class="left row">
+                    <div class="menu-list" data-aos="fade-up">
+                        <div class="menu-img">
+                            <img src="./assets/images/menu-1.png" alt="">
+                        </div>
+                        <div class="menu-info">
+                            <div class="menu-title">
+                                <a href="#">Greek Salad</a>
+                                <button class="btn-menu">Seasonal</button>
+                                <div class="price">$25.50</div>
+                            </div>
+                            <p>Tomatoes, green bell pepper, sliced cucumber onion, olives, and feta cheese.</p>
+                        </div>
+                    </div>
+                    <div class="menu-list" data-aos="fade-up">
+                        <div class="menu-img">
+                            <img src="./assets/images/menu-2.png" alt="">
+                        </div>
+                        <div class="menu-info">
+                            <div class="menu-title">
+                                <a href="#">Butternut Pumpkin</a>
+                                <div class="price price2">$10.00</div>
+                            </div>
+                            <p>Typesetting industry lorem Lorem Ipsum is simply dummy text of the priand.</p>
+                        </div>
+                    </div>
+                    <div class="menu-list" data-aos="fade-up">
+                        <div class="menu-img">
+                            <img src="./assets/images/menu-5.png" alt="">
+                        </div>
+                        <div class="menu-info">
+                            <div class="menu-title">
+                                <a href="#">Olivas Rellenas</a>
+                                <div class="price price3">$25.50</div>
+                            </div>
+                            <p>Avocados with crab meat, red onion, crab salad stuffed red bell pepper and green bell pepper.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="right row">
+                    <div class="menu-list" data-aos="fade-up">
+                        <div class="menu-img">
+                            <img src="./assets/images/menu-3.png" alt="">
+                        </div>
+                        <div class="menu-info">
+                            <div class="menu-title">
+                                <a href="#">Lasagne</a>
+                                <div class="price">$40.50</div>
+                            </div>
+                            <p>Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices</p>
+                        </div>
+                    </div>
+                    <div class="menu-list" data-aos="fade-up">
+                        <div class="menu-img">
+                            <img src="./assets/images/menu-4.png" alt="">
+                        </div>
+                        <div class="menu-info">
+                            <div class="menu-title">
+                                <a href="#">Tokusen Wagyu</a>
+                                <button class="btn-menu">New</button>
+                                <div class="price">$39.90</div>
+                            </div>
+                            <p>Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices.</p>
+                        </div>
+                    </div>
+                    <div class="menu-list" data-aos="fade-up">
+                        <div class="menu-img">
+                            <img src="./assets/images/menu-6.png" alt="">
+                        </div>
+                        <div class="menu-info">
+                            <div class="menu-title">
+                                <a href="#">Opu Fish</a>
+                                <div class="price">$49.50</div>
+                            </div>
+                            <p>Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div  data-aos="fade-up" class="menu-time">During winter daily from <span>7:00 pm</span> to <span>9:00 pm</span></div>
+        <button data-aos="fade-up"  class="btn-animation">View All Menu</button>
+    </section>
+
+    <!-- Message section -->
+    <section class="message">
+        <div class="quote">”</div>
+        <h1 class="title">I wanted to thank you for inviting me down for that amazing dinner the other night. The food was extraordinary.</h1>
+        <div class="borders">
+            <div class="separator"></div>
+            <div class="separator"></div>
+            <div class="separator"></div>
+        </div>
+        <img src="./assets/images/testi-avatar.jpg" alt="">
+        <h3>Sam Jhonson</h3>
+    </section>
+
+    <!-- Contact section  -->
+    <section class="contact" id="contact">
+        <div class="content">
+            <img src="./assets/images/shape-7.png" class="shape7" alt="">
+            <div class="left">
+                <h1 class="title">Online Reservation</h1>
+                <p>Booking request <a href="#">+88-123-123456</a> or fill out the order form</p>
+                <form>
+                    <div class="row">
+                        <input type="text" class="name" placeholder="Your Name">
+                        <input type="text" class="phone" placeholder="Phone Number">
+                    </div>
+                    <div class="row">
+                        <select class="person">
+                            <option value="">1 Person</option>
+                            <option value="">2 Person</option>
+                            <option value="">3 Person</option>
+                            <option value="">4 Person</option>
+                            <option value="">5 Person</option>
+                            <option value="">6 Person</option>
+                            <option value="">7 Person</option>
+                        </select>
+                        <input class="date" type="date">
+                        <input class="datetime" type="time" value="08:00">
+                    </div>
+                    <textarea placeholder="Message"></textarea>
+                    <button class="btn-animation">Book a table</button>
+                </form>
+            </div>
+            <div class="right">
+                <h1 class="title">Contact Us</h1>
+                <h2>Booking Request</h2>
+                <a href="#" class="link">+88-123-123456</a>
+                <div class="border"></div>
+                <ul>
+                    <li>
+                        <h2>Location</h2>
+                        <p>Restaurant St, Delicious City, <br> London 9578, UK</p>
+                    </li>
+                    <li>
+                        <h2>Lunch Time</h2>
+                        <p>Monday to Sunday <br> 11.00 am - 2.30pm</p>
+                    </li>
+                    <li>
+                        <h2>Dinner Time</h2>
+                        <p>Monday to Sunday <br> 05.00 pm - 10.00pm</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Strength section  -->
+    <section class="strength">
+        <img src="./assets/images/shape-8.png" alt="" class="shape8">
+        <div data-aos="fade-up" class="title-section">
+            <h2>WHY CHOOSE US</h2>
+            <img src="./assets/images/separator.svg" alt="">
+        </div>
+        <h1 data-aos="fade-up" class="title">Our Strength</h1>
+        <div class="cards">
+            <div class="card" data-aos="fade-up" data-aos-duration="1500">
+                <img src="./assets/images/features-icon-1.png" alt="">
+                <h2>Hygienic Food</h2>
+                <p>Lorem Ipsum is simply dummy printing and typesetting.</p>
+            </div>
+            <div class="card bg-black" data-aos="fade-up" data-aos-duration="1700">
+                <img src="./assets/images/features-icon-2.png" alt="">
+                <h2>Fresh Environment</h2>
+                <p>Lorem Ipsum is simply dummy printing and typesetting.</p>
+            </div>
+            <div class="card" data-aos="fade-up" data-aos-duration="1800">
+                <img src="./assets/images/features-icon-3.png" alt="">
+                <h2>Skilled Chefs</h2>
+                <p>Lorem Ipsum is simply dummy printing and typesetting.</p>
+            </div>
+            <div class="card bg-black" data-aos="fade-up" data-aos-duration="1900">
+                <img src="./assets/images/features-icon-4.png" alt="">
+                <h2>Event & Party</h2>
+                <p>Lorem Ipsum is simply dummy printing and typesetting.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event section  -->
+    <section class="event">
+        <div class="title-section" data-aos="fade-up">
+            <h2>Recent Updates</h2>
+            <img src="./assets/images/separator.svg" alt="">
+        </div>
+        <h1 data-aos="fade-up" class="title">Upcoming Event</h1>
+        <div class="cards">
+            <div class="behind-card" data-aos="fade-right">
+                <div class="card card1">
+                    <div class="date">15/09/2022</div>
+                    <div class="titles">
+                        <h2>Food, Flabour</h2>
+                        <h1>Flavour so good you’ll try to eat with your eyes.</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="behind-card" data-aos="fade-up">
+                <div class="card card2">
+                    <div class="date">5/08/2022</div>
+                    <div class="titles">
+                        <h2>HEALTHY FOOD</h2>
+                        <h1>Flavour so good you’ll try to eat with your eyes.</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="behind-card" data-aos="fade-left">
+                <div class="card card3">
+                    <div class="date">9/09/2022</div>
+                    <div class="titles">
+                        <h2>RECIPIE</h2>
+                        <h1>Flavour so good you’ll try to eat with your eyes.</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="btn-animation" data-aos="fade-up">VIEW OUR BLOG</button>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="row">
+            <div class="left">
+                <ul>
+                    <li data-aos="fade-right" data-aos-duration="1500"><a href="#home">Home</a></li>
+                    <li data-aos="fade-right" data-aos-duration="1600"><a href="#menus">Menus</a></li>
+                    <li data-aos="fade-right" data-aos-duration="1700"><a href="#about">About Us</a></li>
+                    <li data-aos="fade-right" data-aos-duration="1800"><a href="#ourChefs">Our Chefs</a></li>
+                    <li data-aos="fade-right" data-aos-duration="1900"><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="center">
+                <div class="pattern">
+                    <img src="./assets/images/img-pattern.svg" class="pattern-img" alt="">
+                    <img src="./assets/images/img-pattern.svg" class="pattern-img" alt="">
+                    <img src="./assets/images/img-pattern.svg" class="pattern-img" alt="">
+                </div>
+                <img src="./assets/images/footer-form-bg.png" class="footer-form-img" alt="">
+                <div class="content">
+                    <img src="./assets/images/logo.svg" class="logo" alt="">
+                    <p>Restaurant St, Delicious City, London 9578, UK</p>
+                    <a href="#">booking@grilli.com</a>
+                    <a href="#">Booking Request : +88-123-123456</a>
+                    <p>Open : 09:00 am - 01:00 pm</p>
+                    <div class="borders">
+                        <div class="separator"></div>
+                        <div class="separator"></div>
+                        <div class="separator"></div>
+                    </div>
+                    <h1 class="title">Get News & Offers</h1>
+                    <p>Subscribe us & <span>Get 25% Off</span>.</p>
+                    <div class="inputs">
+                        <ion-icon class="mail-icon" name="mail-outline"></ion-icon>
+                        <input type="email" placeholder="Your email">
+                        <button class="btn-animation">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <ul>
+                    <li data-aos="fade-left" data-aos-duration="1500"><a href="#">Facebook</a></li>
+                    <li data-aos="fade-left" data-aos-duration="1600"><a href="#">instagram</a></li>
+                    <li data-aos="fade-left" data-aos-duration="1700"><a href="#">twitter</a></li>
+                    <li data-aos="fade-left" data-aos-duration="1800"><a href="#">youtube</a></li>
+                    <li data-aos="fade-left" data-aos-duration="1900"><a href="#">google map</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="copyright">© 2022 Grilli. All Rights Reserved | Crafted by <a href="#">codewithsadee</a></p>
+    </footer>
+
+    <!-- AOS JS  -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1500,
+            once: true,
+            offset: 50,
+        });
+    </script>
+
+    <!-- IonIcon -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- JS LINK  -->
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
