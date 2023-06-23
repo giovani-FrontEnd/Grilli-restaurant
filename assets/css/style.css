@@ -393,20 +393,17 @@ header .arrow-right .right-icon{
 header nav{
     background-color: transparent;
     padding: 20px;
-    margin: 20px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-header nav.active{
     position: fixed;
-    top: 0;
-    left: 0;
-    background-color: var(--eerie-black-4);
-    margin: 0;
+    height: 96px;
     width: 100%;
     z-index: 20;
-    transition: var(--transition-2);
+}
+header nav.active{
+    top: 0;
+    background-color: var(--eerie-black-4);
 }
 header nav ul{
     display: flex;
@@ -507,6 +504,7 @@ header nav .hamburger .hamb-icon:last-child{
 header .content-header{
     text-align: center;
     color: #fff;
+    margin: 80px;
 }
 header .content-header .title-section{
     margin: 0 auto 30px auto;

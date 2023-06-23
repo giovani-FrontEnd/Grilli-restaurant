@@ -94,25 +94,14 @@ let navbar = document.querySelector('header nav');
 var prevScrollpos = window.pageYOffset;
 
 document.onscroll = function () {
-  var currentScrollPos = window.pageYOffset;
-  if(prevScrollpos > currentScrollPos) {
-    navbar.style.top = '0';
-  } else{
-    navbar.style.top = '-100px';
-  }
-  prevScrollpos = currentScrollPos;
 
     if(window.scrollY > 50) {
         scrollTop.classList.add('active');
-    } else{
+        navbar.classList.add('active');
+      } else{
         scrollTop.classList.remove('active');
-    }
-
-    if(window.scrollY > 250){
-      navbar.classList.add('active');
-    } else{
-      navbar.classList.remove('active');
-    }
+        navbar.classList.remove('active'); 
+      }
 }
 
 scrollTop.onclick = () => {
@@ -135,8 +124,7 @@ aboutSection.onmousemove = function (e) {
 
 // loadingPage 
 
-
-document.addEventListener("DOMContentLoaded", function(event) {
+document.addEventListener("DOMContentLoaded", function() {
   let loading = document.querySelector('.loading');
 
   // Show the loading screen
