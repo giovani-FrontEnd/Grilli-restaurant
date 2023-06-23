@@ -185,6 +185,7 @@ li{
 
 /* laoding page  */
 .loading{
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -942,6 +943,7 @@ header .book-table .overlay-book-table{
     right: 20%;
     width: 70px;
     height: 70px;
+    z-index: 2;
 }
 .about .right .badge-2-bg{
     position: absolute;
@@ -1104,22 +1106,22 @@ header .book-table .overlay-book-table{
 .menus-list .content-menu .row .menu-list .menu-img::before{
     content: '';
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 0%;
+    left: 0%;
+    /* transform: translate(-50%, -50%); */
     width: 0px;
     height: 0px;
     background-color: var(--gold-crayola);
     border-radius: 20px;
     opacity: 0.3;
     transition: var(--transition-1);
-    z-index: -2;
+    /* z-index: 2; */
 }
-.menus-list .content-menu .row .menu-list:hover .menu-img::before{
+.menus-list .content-menu .row .menu-list .menu-img:hover::before{
     width: 110px;
     height: 110px;
 }
-.menus-list .content-menu .row .menu-list .menu-imgs img{
+.menus-list .content-menu .row .menu-list .menu-img img{
     width: 100%;
     height: 100%;
 }
@@ -1716,8 +1718,9 @@ footer .center .content .inputs button{
 }
 footer .center .content .inputs button::before{
     background-color: #000;
+}
+footer .center .content .inputs button:hover{
     color: var(--gold-crayola);
-    z-index: 1;
 }
 footer .copyright{
     color: var(--quick-silver);

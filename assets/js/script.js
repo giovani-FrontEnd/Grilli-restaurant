@@ -51,10 +51,6 @@ const prevIcon = document.querySelector('.arrow-left');
 const nextIcon = document.querySelector('.arrow-right');
 let currentIndex = 0;
 
-// let titlesHeader = ['For the love of delicious food', 'Where every flavor tells a story', 'Flavors Inspired by the Seasons']
-// let titleSectionHeader = document.querySelector("header .content-header .title-section h2");
-// let titleHeader = document.querySelector("header .content-header .title");
-
 // Function to show the slide at the specified index
 function showSlide(index) {
   // Remove the active class from all slides
@@ -95,13 +91,27 @@ setInterval(nextSlide, 6000);
 let scrollTop = document.querySelector('.scroll-top');
 let navbar = document.querySelector('header nav');
 
+var prevScrollpos = window.pageYOffset;
+
 document.onscroll = function () {
+  var currentScrollPos = window.pageYOffset;
+  if(prevScrollpos > currentScrollPos) {
+    navbar.style.top = '0';
+  } else{
+    navbar.style.top = '-100px';
+  }
+  prevScrollpos = currentScrollPos;
+
     if(window.scrollY > 50) {
         scrollTop.classList.add('active');
-        navbar.classList.add('active');
     } else{
         scrollTop.classList.remove('active');
-        navbar.classList.remove('active');
+    }
+
+    if(window.scrollY > 250){
+      navbar.classList.add('active');
+    } else{
+      navbar.classList.remove('active');
     }
 }
 
