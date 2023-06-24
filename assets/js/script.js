@@ -91,7 +91,6 @@ setInterval(nextSlide, 6000);
 let scrollTop = document.querySelector('.scroll-top');
 let navbar = document.querySelector('header nav');
 
-var prevScrollpos = window.pageYOffset;
 
 document.onscroll = function () {
 
